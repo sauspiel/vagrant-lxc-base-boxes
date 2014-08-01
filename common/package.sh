@@ -25,6 +25,7 @@ popd &>>${LOG}
 log 'Preparing box package contents'
 cp conf/${DISTRIBUTION} ${WORKING_DIR}/lxc-config
 cp conf/metadata.json ${WORKING_DIR}
+cp conf/lxc-template-devbox ${WORKING_DIR}/lxc-template
 sed -i "s/<TODAY>/${NOW}/" ${WORKING_DIR}/metadata.json
 
 # Vagrant box!
