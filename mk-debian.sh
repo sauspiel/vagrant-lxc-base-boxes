@@ -41,6 +41,7 @@ info "Building box to '${PACKAGE}'..."
 ./debian/install-extras.sh ${CONTAINER}
 ./common/prepare-vagrant-user.sh ${CONTAINER}
 ./debian/clean.sh ${CONTAINER}
+./debian/prepare-dhcp-2nd-nic.sh
 ./common/package.sh ${CONTAINER} ${PACKAGE}
 
 info "Finished building '${PACKAGE}'!"
