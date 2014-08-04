@@ -12,7 +12,7 @@ cat << EOF > $DHCPCONF
 option rfc3442-classless-static-routes code 121 = array of unsigned integer 8;
 send host-name = gethostname();
 supersede domain-name "saulabs.io";
-request subnet-mask, broadcast-address, time-offset, routers,
+request subnet-mask, broadcast-address, time-offset,
         domain-name, host-name,
         dhcp6.name-servers, dhcp6.domain-search,
         netbios-name-servers, netbios-scope, interface-mtu,
@@ -21,6 +21,7 @@ request subnet-mask, broadcast-address, time-offset, routers,
 interface "eth0" {
   request domain-name-servers;
   request domain-search;
+  request routers;
 }
 EOF
 
