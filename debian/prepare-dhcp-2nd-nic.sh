@@ -11,14 +11,14 @@ DHCPCONF=${ROOTFS}/etc/dhcp/dhclient.conf
 cat << EOF > $DHCPCONF
 option rfc3442-classless-static-routes code 121 = array of unsigned integer 8;
 send host-name = gethostname();
-supersede domain-name "saulabs.io";
 request subnet-mask, broadcast-address, time-offset,
-        domain-name, host-name,
+        host-name,
         dhcp6.name-servers, dhcp6.domain-search,
         netbios-name-servers, netbios-scope, interface-mtu,
         rfc3442-classless-static-routes, ntp-servers;
 
 interface "eth0" {
+  request domain-name;
   request domain-name-servers;
   request domain-search;
   request routers;
