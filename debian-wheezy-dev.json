@@ -1,20 +1,28 @@
 {
   "name": "debian-wheezy-dev",
   "description": "Customized debian wheezy lxc box for development",
-  "versions": [{
-    "version": "0.1.0",
-    "providers": [{
-      "name": "lxc",
-      "url": "https://s3-eu-west-1.amazonaws.com/sauspiel-vagrant/lxc/debian-wheezy-dev_0.1.0.box",
-      "checksum_type": "sha1",
-      "checksum": "323b82f9a4f0cd235f1abde95501de327203fd5b"
-    }],
-    "version": "0.2.0",
-    "providers": [{
-      "name": "lxc",
-      "url": "https://s3-eu-west-1.amazonaws.com/sauspiel-vagrant/lxc/debian-wheezy-dev_0.2.0.box",
-      "checksum_type": "sha1",
-      "checksum": "bc8e0fcacf7bfc6bd27665d4c800356b6aeb31bc"
-    }]
-  }]
+  "versions": [
+    {
+      "version": "0.1.0",
+      "providers": [
+        {
+          "name": "lxc",
+          "url": "https://s3-eu-west-1.amazonaws.com/sauspiel-vagrant/lxc/debian-wheezy-dev_0.1.0.box",
+          "checksum_type": "sha1",
+          "checksum": "323b82f9a4f0cd235f1abde95501de327203fd5b"
+        }
+      ]
+    },
+    {
+      "version": "0.2.0",
+      "providers": [
+        {
+          "name": "lxc",
+          "url": "https://s3-eu-west-1.amazonaws.com/sauspiel-vagrant/lxc/debian-wheezy-dev_0.2.0.box",
+          "checksum_type": "sha1",
+          "checksum": "bc8e0fcacf7bfc6bd27665d4c800356b6aeb31bc"
+        }
+      ]
+    }
+  ]
 }
