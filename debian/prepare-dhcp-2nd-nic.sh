@@ -12,7 +12,7 @@ option rfc3442-classless-static-routes code 121 = array of unsigned integer 8;
 send host-name = gethostname();
 request subnet-mask, broadcast-address, time-offset,
         host-name, domain-name, domain-name-servers,
-        domain-search, routers
+        domain-search, routers,
         dhcp6.name-servers, dhcp6.domain-search,
         netbios-name-servers, netbios-scope, interface-mtu,
         rfc3442-classless-static-routes, ntp-servers;
