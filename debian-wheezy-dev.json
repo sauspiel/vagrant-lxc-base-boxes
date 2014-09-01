@@ -23,6 +23,39 @@
           "checksum": "bc8e0fcacf7bfc6bd27665d4c800356b6aeb31bc"
         }
       ]
+    },
+    {
+      "version": "0.3.0",
+      "providers": [
+        {
+          "name": "lxc",
+          "url": "https://s3-eu-west-1.amazonaws.com/sauspiel-vagrant/lxc/debian-wheezy-dev_0.3.0.box",
+          "checksum_type": "sha1",
+          "checksum": "a6e0b768851d6b00c5f9af61ba174ef10665fe3a"
+        }
+      ]
+    },
+    {
+      "version": "0.4.0",
+      "providers": [
+        {
+          "name": "lxc",
+          "url": "https://s3-eu-west-1.amazonaws.com/sauspiel-vagrant/lxc/debian-wheezy-dev_0.4.0.box",
+          "checksum_type": "sha1",
+          "checksum": "68f91b31106a6b5f034f0db44ea96ce2ca2d29a6"
+        }
+      ]
+    },
+    {
+      "version": "0.5.0",
+      "providers": [
+        {
+          "name": "lxc",
+          "url": "https://s3-eu-west-1.amazonaws.com/sauspiel-vagrant/lxc/debian-wheezy-dev_0.5.0.box",
+          "checksum_type": "sha1",
+          "checksum": "1ed3e50a95843430b140c62b17958bc7e729bbbe"
+        }
+      ]
     }
   ]
 }
