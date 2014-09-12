@@ -56,6 +56,17 @@
           "checksum": "1ed3e50a95843430b140c62b17958bc7e729bbbe"
         }
       ]
+    },
+    {
+      "version": "0.6.0",
+      "providers": [
+        {
+          "name": "lxc",
+          "url": "https://s3-eu-west-1.amazonaws.com/sauspiel-vagrant/lxc/debian-wheezy-dev_0.6.0.box",
+          "checksum_type": "sha1",
+          "checksum": "9433af183f2643765f6f9042c7df072da638e223"
+        }
+      ]
     }
   ]
 }
