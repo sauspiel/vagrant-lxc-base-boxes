@@ -57,7 +57,7 @@ if [ `grep $interface /etc/iproute2/rt_tables | wc -l` -eq 0 ]; then
 fi
 
 case $reason in
-  "BOUND")  IPADDR=$new_ip_address ;;
+  "BOUND"|"REBOOT")  IPADDR=$new_ip_address ;;
   "RELEASE")  IPADDR=$old_ip_address ;;
 esac
 
@@ -66,7 +66,7 @@ SUBNET="$NET.0"
 GATEWAY="$NET.254"
 
 case $reason in
-  "BOUND")
+  "BOUND"|"REBOOT")
     ip rule add from $SUBNET/24 table $interface
     ip rule add to $SUBNET/24 table $interface
     ip route add $SUBNET/24 dev $interface table $interface
